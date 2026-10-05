@@ -24,7 +24,7 @@ h1 {
 
 button {
     font-size: 20px;
-    background-color: lightblue;
+    background-color: black;
     padding: 10px 20px;
     margin: 8px 0;
 }
@@ -35,7 +35,7 @@ button {
 #sizemsg,
 #clock {
     font-size: 20px;
-    background-color: lightblue;
+    background-color: blue;
     padding: 10px 20px;
     margin: 8px 0;
 }
