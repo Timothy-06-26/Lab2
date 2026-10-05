@@ -24,12 +24,21 @@ btn.addEventListener("click", function() {
 
 });
 
-// Adding a keydown event listener to the document
 let keymsg = document.getElementById("keymsg");
 
 // Adding a keydown event listener to the document
 document.addEventListener("keydown", function(event) {
     keymsg.innerHTML = "You pressed the " + event.key + " key!";
+
+    if(event.key === "g") {
+        box.style.backgroundColor = "green";
+        title.innerHTML = "The box has changed to green!";
+            }
+            if (event.key === "p") {
+                box.style.backgroundColor = "purple";   
+                title.innerHTML = "The box has changed to purple!";      
+             }
+
 });
 
 // Adding a resize event listener to the window
@@ -40,6 +49,20 @@ function showWidth() {
 }
 
 window.addEventListener("resize", showWidth);
-
 showWidth(); 
-// Call the function initially to display the width when the page loads
+// Display the width when the page loads
+
+
+
+
+// Adding a clock to the page
+let clock = document.getElementById("clock");
+function updateClock() {
+    let now = new Date();
+    clock.innerHTML = now.toLocaleTimeString();
+}
+
+setInterval(updateClock, 1000);
+updateClock();
+ // Display the time when the page loads
+
